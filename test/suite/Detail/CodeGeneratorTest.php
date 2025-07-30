@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 
 class CodeGeneratorTest extends TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->generator = new CodeGenerator();
     }

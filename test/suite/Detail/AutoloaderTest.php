@@ -7,7 +7,7 @@ use Phake;
 
 class AutoloaderTest extends TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->path          = tempnam(sys_get_temp_dir(), 'isolator-');
         $this->codeGenerator = Phake::mock(__NAMESPACE__ . '\CodeGenerator');

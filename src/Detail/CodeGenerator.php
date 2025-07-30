@@ -117,7 +117,7 @@ class CodeGenerator
         return sprintf(
             'public function %s%s(%s)',
             $returnsReference ? '&' : '',
-            str_replace('\\', '_', $name),
+            str_replace('\\', '__', $name),
             implode(', ', $parameters)
         );
     }

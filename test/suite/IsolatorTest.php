@@ -11,12 +11,12 @@ use SplObjectStorage;
  */
 class IsolatorTest extends TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->isolator = new Isolator();
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         Isolator::set(null);
     }

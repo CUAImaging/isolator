@@ -25,7 +25,7 @@ trait IsolatorTrait
      *
      * @param Isolator|null $isolator The isolator instance to be used by this object, or null to use the global instance.
      */
-    public function setIsolator(Isolator $isolator = null)
+    public function setIsolator(?Isolator $isolator = null)
     {
         $this->isolator = $isolator;
     }
