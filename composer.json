@@ -1,6 +1,7 @@
 {
     "name": "icecave/isolator",
     "description": "Dependency injection for global functions.",
+    "version": "3.1.0",
     "keywords": [
         "test",
         "phpunit",
