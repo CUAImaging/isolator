@@ -78,7 +78,7 @@ abstract class AbstractIsolator
      *
      * @return Isolator The global isolator instance, or $isolator if provided.
      */
-    public static function get(Isolator $isolator = null)
+    public static function get(?Isolator $isolator = null)
     {
         if (null !== $isolator) {
             return $isolator;
@@ -94,7 +94,7 @@ abstract class AbstractIsolator
      *
      * @param Isolator $isolator The isolator instance.
      */
-    public static function set(Isolator $isolator = null)
+    public static function set(?Isolator $isolator = null)
     {
         self::$instance = $isolator;
     }
